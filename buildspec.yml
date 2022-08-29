@@ -5,9 +5,9 @@ phases:
     runtime-versions:
       java: latest
   pre_build:
-  - maven:
-      goals: clean install
+ 
     commands:
+    -maven: install
     - echo Pre-build completed on 'data'
   build:
     commands:
