@@ -6,8 +6,7 @@ phases:
       java: latest
   pre_build:
     commands:
-    - mvn clean
-    - mvn validate
+    - mvn install
     - echo Pre-build completed on 'data'
   build:
     commands:
